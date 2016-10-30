@@ -1,0 +1,39 @@
+ <html>
+ <head>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.sound.js"></script>
+   <script>
+    
+    // an example using sound (which is not required for this assignment)
+
+    var sound;
+    
+    function preload() 
+    {
+      sound = loadSound('pop.mp3');
+    }
+    
+    function setup() 
+    {
+       createCanvas(800, 600);
+       textAlign(CENTER);
+       fill(100);
+       noStroke();
+       text("Click to play sound", width/2, height/2);
+    }
+
+    function draw() 
+    {
+     
+    }
+    
+    function mouseClicked() 
+    { 
+       sound.play();
+       background(random(255), random(255), random(255));
+    }
+
+   </script>
+ </head>
+ </html>
+
